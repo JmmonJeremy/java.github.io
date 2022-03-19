@@ -1,0 +1,60 @@
+body {
+    background: #c7ccd6;
+    padding-top: 1rem;
+    border-top: 2rem solid;
+    margin: 0;
+}
+main {
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 550px;
+    background-color: #afc8f7;
+    border: .6rem solid;
+    border-radius: 1rem;
+    padding-left: 3rem;    
+}
+h1 {
+    text-decoration: underline .6rem;
+
+}
+#input label {
+    font-size: 4rem;
+    margin-right: 25px;
+    text-decoration: underline .6rem;
+}
+#input input {
+    border: .75rem solid;
+    box-shadow: 0 -5px 10px rgb(94, 94, 94);
+}
+#input {
+    display: flex;
+    align-items: flex-end;    
+}
+#grades {
+    width: 225px;    
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .5rem;      
+}
+#submitButton {   
+    font-size: 2rem;
+    color:#2525af;
+    font-weight: 900;
+    padding: 1rem;
+    border: 3px groove #2525af;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px #2525af;
+    background-color:#fdf4ea;    
+}
+#submitButton:hover {
+    cursor: pointer;
+}
+#output {
+    width: 500px;
+    height: 200px;
+    border: 3px groove #2525af;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px #ebdf41;
+    background-color:#fdf4ea;    
+    font-size: 2rem;    
+}
