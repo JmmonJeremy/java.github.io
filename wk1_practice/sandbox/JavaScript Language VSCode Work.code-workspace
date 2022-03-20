@@ -1,0 +1,17 @@
+{
+    "folders": [
+		{
+			"path": "stepwise_debugging (1)"
+		},
+		{
+			"name": "Sandbox",
+			"uri": "sandbox:/"
+		},
+		{
+			"path": "my_1st_sandbox"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "my_1st_sandbox"
+    }
+}

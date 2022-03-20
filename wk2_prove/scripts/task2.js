@@ -17,7 +17,7 @@ document.querySelector("#year").innerHTML = curYear;
 
 // Step 5: declare and instantiate a variable to hold the name of your picture
 let myPic;
-myPic = "/Week2_Prove/images/myPicture.jpg"
+myPic = "/wk2_prove/images/myPicture.jpg"
 
 // Step 6: copy your image into the "images" folder
 
