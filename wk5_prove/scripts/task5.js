@@ -3,7 +3,7 @@
 /* IF/ELSE IF */
 
 // Step 1: Declare and initialize a new variable to hold the current date
-toDate = new Date();
+let toDate = new Date();
 // Step 2: Declare another variable to hold the day of the week
 let weekDay;
 // Step 3: Using the variable declared in Step 1, assign the value of the 
