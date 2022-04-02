@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Tracker | Jeremy T Suchanski</title>
+    <link rel="stylesheet" href="css/food_tracker.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Ranchers&display=swap" rel="stylesheet">
+    <!-- ***************************************************************************************************************** -->
+</head>
+
+<body>
+    <main>
+        <div id="wrapper">
+            <!-- ***************************************************************************************************************** -->
+            <!-- Title Section-->
+            <h1>Food Tracker</h1>
+            <!-- ***************************************************************************************************************** -->
+            <!--Calorie Goal Input Section-->
+            <div id="goal_container">
+                <span id="goal_label">Daily Calory Goal:</span> <span id="goal" contenteditable="true">2000</span>
+            </div>
+            <!-- ***************************************************************************************************************** -->
+            <!--Meals Input Section-->
+            <fieldset>
+                <legend>Meal Entry</legend>
+                <p id="input_guidance">Enter the meal category and foods for your meal.</p>
+                <label class="top"><span class="entry_label">Meal Category</span>
+                    <select name="subject" class="entry_box" id="meal_category">
+                        <option id="drop_menu" value="" selected disabled>&#9947;&emsp;Please Select&emsp;&#9947;</option>
+                        <option value="" disabled="disabled">───────────</option>
+                        <option id="b" value="breakfast">Breakfast</option>
+                        <option value="" disabled="disabled">───────────</option>
+                        <option id="l" value="lunch">Lunch</option>
+                        <option value="" disabled="disabled">───────────</option>
+                        <option id="d" value="dinner">Dinner</option>
+                        <option value="" disabled="disabled">───────────</option>
+                        <option id="s" value="snack">Snack</option>
+                        <option value="" disabled="disabled">───────────</option>
+                    </select>
+                </label>
+                <div id="fruit">
+                    <p>🍽️</p>
+                    <p id="middle">🍉</p>
+                    <p>⚖️</p>
+                </div>
+                <label class="top"><span class="entry_label" id="food_item_label">Food Item ─── </span>
+                    <input type="text" name="meal" class="entry_box" id="food_item"></label>
+                <label class="top"><span class="entry_label">Calories ───── </span>
+                    <input type="text" name="meal" class="entry_box" id="quantity"></label>
+            </fieldset>
+
+            <div id="submit_container">                   
+                <div class="output" id="p_output">
+                    <p class="inner_output" id="p_inner_output"></p>
+                </div>
+
+                <button id="addItem">Add Your Food Item</button>
+
+                <div class="button_container">
+                    <button id="meal_total">Planned Meal Cal</button>
+                    <button id="total">Total Planned Cal</button> 
+                </div>
+            </div>
+            <!-- ***************************************************************************************************************** -->
+            <!--Meal Output Section-->
+            <fieldset id=food_log>
+                <legend>Meals</legend>
+                <p id="header">Plan your meals and check off foods when eaten.</p>
+                <div id="tracking_box">
+                    <div class="meal_container">
+                        <label><span id="b_open">⏹️</span><span class="m_chkd" id="b_chkd">☑️</span>Breakfast:</label>
+                        <dl class="meals" id="breakfast">
+                            <!--The entries from the user's meals-->
+                        </dl>
+                    </div>
+
+                    <div class="meal_container">
+                        <label><span id="l_open">⏹️</span><span class="m_chkd" id="l_chkd">☑️</span>Lunch:</label>
+                        <dl class="meals" id="lunch">
+                            <!--The entries from the user's meals-->
+                        </dl>
+                    </div>
+
+                    <div class="meal_container">
+                        <label><span id="d_open">⏹️</span><span class="m_chkd" id="d_chkd">☑️</span>Dinner:</label>
+                        <dl class="meals" id="dinner">
+                            <!--The entries from the user's meals-->
+                        </dl>
+                    </div>
+
+                    <div class="meal_container">
+                        <label><span id="s_open">⏹️</span><span class="m_chkd" id="s_chkd">☑️</span>Snacks:</label>
+                        <dl class="meals" id="snack">
+                            <!--The entries from the user's meals-->
+                        </dl>
+                    </div>
+                </div>
+            </fieldset>
+            <!-- ***************************************************************************************************************** -->
+            <!--Results Section-->
+            <div id="result_box">
+                <div class="button_container">
+                    <button id="eMeal_total">Eaten Meal Cal</button>
+                    <button id="eTotal">Total Eaten Cal</button>
+                </div>
+                <div class="output" id="e_output">
+                    <p class="inner_output" id="e_inner_output"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- ***************************************************************************************************************** -->
+    <script src="scripts/food_tracker.js"></script>
+</body>
+
+</html>

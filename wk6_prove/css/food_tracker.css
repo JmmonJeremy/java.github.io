@@ -1,0 +1,287 @@
+/* ---------------------- All Content Section ---------------------- */
+body {
+    background: #c7ccd6;
+    padding-top: 1rem;
+    border-top: 2rem solid;
+    border-bottom: 2rem solid #2525af;
+    margin: 0;
+}
+main {
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 960px;
+    background: radial-gradient(#aff7d9, #afc8f7, #afc8f7, #afc8f7, #afc8f7, #ebdf41, #ebdf41);
+    border: .6rem solid #2525af;
+    border-radius: 30rem;  
+    box-shadow: 0 0 10px #ebdf41;    
+}
+/* ---------------- Wrapper Immediately Inside Main ---------------- */
+#wrapper {
+    width: 640px;
+    margin: 0 auto 7.5rem auto;
+}
+/* ------------------------- Title Section ------------------------- */
+h1 {
+    text-align: center;   
+    text-decoration: underline .6rem;
+    text-shadow: 10px -10px 10px #ebdf41, -10px 10px 10px #ebdf41;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;      
+}
+/* -------------------- Calorie Goal Input Section ------------------ */
+#goal_container {
+    margin-left: 2.5rem;
+    max-width: 575px;
+    padding: .25rem 0 .25rem 2rem;
+    display: flex; 
+    border-right: 3px solid #ebdf41;   
+    box-shadow: -3rem 0 10px #ebdf41;   
+}
+#goal_label {    
+    padding-top: .75rem;
+    margin-right: 1.5rem;   
+    font-size: 3rem;
+    font-weight: 900; 
+    line-height: 4rem;
+    color:#2525af;   
+    text-shadow: 1px 1px 10px #ebdf41, 1px 1px 10px #ebdf41;   
+    border-top: 3px solid #ebdf41;
+    border-bottom: 3px solid #ebdf41;   
+}
+#goal {   
+    font-size: 3rem;
+    font-weight: 900;
+    background-color:#fdf4ea; 
+    color:#2525af;    
+    padding: 1rem;
+    border: 3px groove #ebdf41;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px #ebdf41;
+    text-shadow: 1px 1px 10px #ebdf41, 1px 1px 10px #ebdf41;
+    text-decoration: 3px underline #ebdf41;
+    text-underline-offset: .5rem;    
+}
+/* ---------------------- Meals Input Section ---------------------- */
+#drop_menu {
+    display: none;
+}
+fieldset {
+    max-width: 640px;
+    font-family: "Krona One", "Trebuchet MS", sans-serif;
+    margin: 0 0 2rem 0;   
+    border: 2px solid #ffff00;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    color: #ffff00;
+    box-shadow: 0 7px 8px #2525af;
+}
+fieldset legend {   
+    padding: 0 1rem;
+    text-shadow: 1px 1px 10px #2525af, 1px 1px 10px #2525af;    
+}
+fieldset p#input_guidance {
+    width:fit-content;
+    margin-bottom: 0;
+    margin-left: 20px;
+    padding: .5rem 0;
+    font-size: 1.1rem;
+    border-top: 2px dotted #ffff00;
+    border-bottom: 1px solid #ffff00;
+}
+label.top{    
+    display: block;
+    padding-top: 1rem;
+    color: #ffff00;   
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 10px #2525af, 1px 1px 10px #2525af;
+}
+.entry_label {   
+    display: inline-block;
+    width: 240px;      
+}
+.entry_box {  
+    text-align: center;  
+    width: 156px;   
+    padding: .5rem 0;
+    border: 2px solid #2525af;
+    border-radius: .5rem; 
+    box-shadow: 0 0 10px #ebdf41;  
+}
+select.entry_box {
+    -webkit-appearance: none;
+    height: 36px;
+    width: 159px;
+    padding: .5rem .3rem;    
+}
+select option {  
+  font-size: 125%;   
+}
+#fruit {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-right: 5rem;
+    margin-top: -2.65rem;
+}
+#fruit p {
+    margin: 0;
+}
+#fruit p#middle {
+    margin: .75rem 0 .55rem 0;
+}
+/* ---------------------- Meal Output Section ---------------------- */
+fieldset#food_log {    
+    border: 2px solid #2525af;
+    font-weight: 900;
+    color: #2525af;
+    text-shadow: 2px 2px 1px #ffff00;
+    display: flex;
+    flex-direction: column;   
+}
+fieldset#food_log p#header {       
+    width:fit-content;
+    margin-bottom: 1rem;
+    margin-top: .75rem;
+    margin-left: 1.25rem;
+    padding: .5rem 0;
+    font-size: 1.1rem;
+    border-top: 2px dotted #ffff00;
+    border-bottom: 1px solid #ffff00;   
+}
+#tracking_box {
+    display: flex;
+    justify-content: space-between;   
+}
+fieldset#food_log legend {
+    text-shadow: 2px 2px 1px #ffff00;
+}
+fieldset#food_log label, dl { 
+    display: block;  
+    font-size:medium;
+    margin-top: 0;
+}
+.m_chkd {
+    display: none;
+}
+.m_open {
+    display: none;
+}
+#b_open:hover, .m_chkd:hover {
+    cursor: pointer;
+}
+div.meal_container {
+    display:flex;
+    flex-direction: column;
+}
+.meals span {
+    cursor: pointer;
+  }
+.mark_top {
+    border-top: 1px solid #eb4c41;
+    text-shadow: 0 0 0;
+    background-color: chartreuse;       
+}
+.mark_bttm {
+    border-bottom: 1px solid #eb4c41;
+    text-shadow: 0 0 0;   
+    background-color: chartreuse;
+}
+.eErase, .xErase {
+    display: none;   
+}
+.together {
+    display: inline;    
+}
+/* ------------------------ Results Section ------------------------ */
+#result_box {
+    max-width: 643px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9rem;    
+}
+.button_container {     
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;          
+}
+#submit_container .button_container {
+    margin-bottom: .5rem
+}
+#addItem, #meal_total, #eMeal_total, #total, #eTotal {    
+    font-size: 1rem;
+    color:#2525af;
+    font-weight: 900;
+    padding: .55rem .35rem;
+    border: 3px groove #2525af;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px #2525af;
+    background-color:#fdf4ea;        
+}
+#eMeal_total, #eTotal {
+    width: 170px;
+}
+#addItem {
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    width: 160px
+}
+#meal_total, #total {
+    padding: .35rem;
+    width: 180px;    
+}
+#total, #eTotal{
+    margin-top: .2rem;    
+}
+#meal_total, #eMeal_total {
+    margin-bottom: .2rem;
+}
+#submit_container {
+  display: flex;  
+  justify-content: space-between;  
+}
+#goal:hover, #meal_category, #food_item, #quantity, #addItem:hover, #meal_total:hover, #eMeal_total:hover , #total:hover, #eTotal:hover {
+    cursor: pointer;    
+}
+#goal:hover {
+    background-color:orange;
+}
+#addItem:hover, #meal_total:hover, #eMeal_total:hover, #total:hover, #eTotal:hover {
+    transform: scale(1.1);
+    transition: all 1s linear;    
+}
+.output { 
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0;    
+    width: 440px;
+    height: 95px;
+    color:#2525af;
+    font-size: 2.5rem;
+    font-weight: 900;
+    
+    text-underline-offset: 10px;
+    text-shadow: 1px 1px 2px #ffff00, -1px -1px 2px #ffff00;
+    border: 3px groove #2525af;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px #2525af;
+    background-color:#fdf4ea;    
+    font-size: 2rem;    
+}
+.inner_output {
+    border-top: 10px groove #2525af;
+    border-bottom: 6px groove #2525af;
+    box-shadow: 0 0 10px #ffff00;  
+    margin-top: 13px;
+    text-decoration: 4px wavy underline;
+}
+#p_output {
+    width: 220px;
+    height: 80px; 
+    text-decoration: 8px wavy underline;
+}    
+#p_inner_output {
+    font-size: 1rem;
+    text-decoration: 4px wavy underline;
+}
